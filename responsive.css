@@ -1,0 +1,19 @@
+/* Responsive layouts */
+@media (max-width: 800px) {
+  .site-header { flex-direction: column; text-align: center; }
+  nav { justify-content: center; gap: 18px; }
+  .hero { min-height: 440px; padding: 60px 7%; }
+  .card-grid, .feature-grid, .testimonial-grid { grid-template-columns: 1fr; }
+  .destinations { padding: 50px 7%; }
+}
+@media (max-width: 600px) {
+  .activities { margin: 25px 12px; padding: 20px; }
+  .booking-section { margin: 35px auto; padding: 28px 20px; }
+  .booking-section::before { letter-spacing: 1.5px; }
+  #captain-letter { padding: 50px 12px 12px; }
+  .vintage-envelope { padding: 54px 12px 20px; }
+  .captain-message { padding: 20px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
