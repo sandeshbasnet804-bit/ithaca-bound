@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ithaca Bound | Sail with Odysseus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">ITHACA BOUND</a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="booking.html">Book a Voyage</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+      <span class="theme-toggle-label">Dark mode</span>
+    </button>
+  </header>
+
+<main id="main-content" tabindex="-1">
+    <section class="hero">
+      <p class="eyebrow">Legendary places. Unpredictable journeys.</p>
+      <h1>Every voyage has a story</h1>
+      <p>
+        Sail with Captain Odysseus toward Ithaca.
+        Bring your courage—and a healthy respect for the gods.
+      </p>
+      <a class="button" href="destinations.html">
+        Explore Destinations
+      </a>
+    </section>
+
+    <section class="featured-voyages">
+      <p class="eyebrow">Featured voyages</p>
+      <h2>Pick the kind of legend you want to live</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-badge">Adventure</span>
+          <h3>Escape the Cyclops</h3>
+          <p>Cliffside trails, cave-dodging stories, and a coastline that rewards the clever.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-badge">Open sea</span>
+          <h3>Cross the Wine Dark Waters</h3>
+          <p>Long sails, strong crew energy, and the kind of sunsets that make legends.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-badge">Homecoming</span>
+          <h3>Return to Ithaca</h3>
+          <p>Return to familiar shores and the comforting promise of home after every storm.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <p class="eyebrow">Traveler reviews</p>
+      <h2>What the crew says</h2>
+
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <p>“The route was dramatic, the captain was prepared, and I still got to enjoy the view.”</p>
+          <footer>— Helena, voyage planner</footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p>“Terrifying in the best possible way. I loved the advice to keep my pride in check.”</p>
+          <footer>— Dorian, sea traveler</footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p>“A perfect mix of myth, adventure, and surprisingly good snacks.”</p>
+          <footer>— Mira, returning sailor</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="destinations">
+      <h2>Your next adventure awaits</h2>
+      <p>Selected stops from a voyage that rarely goes according to plan.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <img
+  class="card-image"
+  src="images/cyclops.png"
+  alt="Vintage illustration of the Cyclops cave with sheep along the rocky coast"
+>
+          <h3>The Cyclops Coast</h3>
+          <p>
+            Discover rugged cliffs, grazing sheep, and mysterious caves.
+            Shore excursions require caution: local hospitality varies.
+          </p>
+          <a href="destinations.html#cyclops">Explore the coast →</a>
+        </article>
+
+        <article class="card">
+          <img
+  class="card-image"
+  src="images/ship.jpg"
+  alt="Ancient Greek ship sailing at sunset"
+>
+          <h3>The Open Sea</h3>
+          <p>
+            Trade crowded streets for open horizons.
+            Departure is scheduled; arrival depends on the weather
+            and Poseidon’s mood.
+          </p>
+          <a href="destinations.html#sea">Meet the sea →</a>
+        </article>
+
+        <article class="card">
+<img
+  class="card-image"
+  src="images/ithaca.png"
+  alt="Vintage illustration of an imagined ancient Ithaca harbor"
+>          <h3>Homeward to Ithaca</h3>
+          <p>
+            Our captain’s most treasured destination.
+            Some travelers seek glory. Others simply want to get home.
+          </p>
+          <a href="destinations.html#ithaca">Discover Ithaca →</a>
+        </article>
+      </div>
+    </section>
+
+ <section class="activity-launcher">
+  <p class="eyebrow">Before You Set Sail</p>
+  <h2>Discover Your Myth</h2>
+  <p>Meet your character or test your survival skills.</p>
+
+  <div class="activity-buttons">
+    <button
+      class="button"
+      type="button"
+      data-panel="character-panel"
+      aria-controls="character-panel"
+      aria-expanded="false"
+    >
+      Find My Character
+    </button>
+
+    <button
+      class="button"
+      type="button"
+      data-panel="quiz-panel"
+      aria-controls="quiz-panel"
+      aria-expanded="false"
+    >
+      Take the Survival Quiz
+    </button>
+  </div>
+</section>
+<section class="activities" id="quiz-panel" hidden>
+  <p class="eyebrow">The Crew Entrance Exam</p>
+  <h2>Would You Survive the Odyssey?</h2>
+  <p>Five questions stand between you and a place aboard.</p>
+
+  <form id="survival-form" class="activity-form">
+    <fieldset>
+      <legend>1. You find cheese in a stranger’s cave. You…</legend>
+      <label>
+        <input type="radio" name="q1" value="1" required>
+        Leave and ask permission before entering.
+      </label>
+      <label>
+        <input type="radio" name="q1" value="0">
+        Declare it an all-you-can-eat buffet.
+      </label>
+      <label>
+        <input type="radio" name="q1" value="0">
+        Give the cave a restaurant review.
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. A giant blocks the exit. Your best approach?</legend>
+      <label>
+        <input type="radio" name="q2" value="0" required>
+        Challenge him to arm wrestling.
+      </label>
+      <label>
+        <input type="radio" name="q2" value="1">
+        Make a clever plan that keeps the exit usable.
+      </label>
+      <label>
+        <input type="radio" name="q2" value="0">
+        Explain that you have class tomorrow.
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. What name does Odysseus give Polyphemus?</legend>
+      <label>
+        <input type="radio" name="q3" value="0" required>
+        Captain Definitely Innocent.
+      </label>
+      <label>
+        <input type="radio" name="q3" value="0">
+        The Cheese Inspector.
+      </label>
+      <label>
+        <input type="radio" name="q3" value="1">
+        Nobody.
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. The sheep leave the cave. You…</legend>
+      <label>
+        <input type="radio" name="q4" value="1" required>
+        Hide beneath them and escape.
+      </label>
+      <label>
+        <input type="radio" name="q4" value="0">
+        Ask a sheep for a ride-share.
+      </label>
+      <label>
+        <input type="radio" name="q4" value="0">
+        Stay behind to collect souvenirs.
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. You finally escape. What now?</legend>
+      <label>
+        <input type="radio" name="q5" value="0" required>
+        Shout your full name and home address.
+      </label>
+      <label>
+        <input type="radio" name="q5" value="1">
+        Keep rowing and protect the crew.
+      </label>
+      <label>
+        <input type="radio" name="q5" value="0">
+        Ask the Cyclops for a five-star review.
+      </label>
+    </fieldset>
+
+    <button class="button" type="submit">Check My Survival Skills</button>
+    <button class="button" type="reset">Try Again</button>
+
+    <div
+      id="survival-result"
+      class="activity-result"
+      role="status"
+      hidden
+    ></div>
+  </form>
+</section>
+<section class="activities" id="character-panel" hidden>
+      <p class="eyebrow">Meet Your Myth</p>
+  <h2>Which Odyssey Character Are You?</h2>
+  <p>
+    Choose your answers to discover your character.
+    Add an optional photo for your result card.
+    The match uses your answers, not your appearance.
+  </p>
+
+  <form id="character-form" class="activity-form">
+    <label for="portrait">Your portrait (optional)</label>
+    <input
+      id="portrait"
+      type="file"
+      accept="image/jpeg,image/png,image/webp"
+    >
+
+    <p class="small-note">
+      JPG, PNG, or WebP under 5 MB.
+      Your photo stays in your browser.
+    </p>
+
+    <p id="photo-message" role="status"></p>
+    <img id="portrait-preview" alt="Your selected portrait" hidden>
+
+    <fieldset>
+      <legend>1. Your crew is in trouble. You…</legend>
+
+      <label>
+        <input type="radio" name="strategy" value="odysseus" required>
+        Invent a clever escape plan.
+      </label>
+
+      <label>
+        <input type="radio" name="strategy" value="penelope">
+        Stay patient and think carefully.
+      </label>
+
+      <label>
+        <input type="radio" name="strategy" value="polyphemus">
+        Tell everyone to leave your cave.
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. What matters most to you?</legend>
+
+      <label>
+        <input type="radio" name="priority" value="odysseus" required>
+        Finding my way home, whatever it takes.
+      </label>
+
+      <label>
+        <input type="radio" name="priority" value="penelope">
+        Loyalty to the people I love.
+      </label>
+
+      <label>
+        <input type="radio" name="priority" value="polyphemus">
+        My own space and my sheep.
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Choose your weakness.</legend>
+
+      <label>
+        <input type="radio" name="weakness" value="odysseus" required>
+        I sometimes brag after winning.
+      </label>
+
+      <label>
+        <input type="radio" name="weakness" value="penelope">
+        I take my time trusting people.
+      </label>
+
+      <label>
+        <input type="radio" name="weakness" value="polyphemus">
+        Unexpected guests really annoy me.
+      </label>
+    </fieldset>
+
+    <button class="button" type="submit">Reveal My Character</button>
+    <button class="button" type="reset">Start Again</button>
+
+    <div
+      id="character-result"
+      class="activity-result"
+      role="status"
+      hidden
+    ></div>
+  </form>
+</section>
+
+    <section class="captain">
+      <p class="eyebrow">A message from your captain</p>
+      <h2>“A strong ship helps A clever plan helps more”</h2>
+      <p>
+        I’m Odysseus, king of Ithaca and your captain.
+        Our crew has learned that strength alone cannot solve every problem.
+        Stay together, follow the plan, and resist the urge to shout
+        your name at anyone throwing rocks.
+      </p>
+      <a class="button" href="booking.html">Join the Crew</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Ithaca Bound — A fictional travel company inspired by
+      Homer’s <cite>The Odyssey</cite>.
+    </p>
+    <p>
+      Student creative project by Sandesh Basnet.
+      All travel offers and character dialogue are fictional.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

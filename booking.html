@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Voyage | Ithaca Bound</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">ITHACA BOUND</a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="booking.html" aria-current="page">Book a Voyage</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+      <span class="theme-toggle-label">Dark mode</span>
+    </button>
+  </header>
+
+  <dialog id="captain-letter" aria-label="Your captain's letter">
+  <form method="dialog">
+    <button class="letter-close" aria-label="Close letter">×</button>
+  </form>
+
+  <div class="vintage-envelope" id="vintage-envelope">
+    <div class="envelope-flap" aria-hidden="true"></div>
+
+    <button type="button" class="wax-seal" id="break-seal"
+            aria-expanded="false" aria-controls="captain-message">
+      <span>IB</span>
+      <small>Break the seal to open</small>
+    </button>
+
+    <article class="captain-message" id="captain-message" tabindex="-1" hidden>
+      <p class="letter-label">ITHACA BOUND · CAPTAIN’S LETTER</p>
+      <h2>Three Rules for Returning Home</h2>
+
+      <p>Dear traveler,</p>
+
+      <p>
+        Before you step aboard, keep these three rules close.
+        The sea rewards more than courage.
+      </p>
+
+      <p>
+        <strong>Respect your hosts:</strong>
+        An open cave is not an invitation to enter.
+      </p>
+
+      <p>
+        <strong>Look after the crew:</strong>
+        A clever plan succeeds when everyone works together.
+      </p>
+
+      <p>
+        <strong>Keep your pride in check:</strong>
+        Surviving danger matters more than claiming credit for it.
+      </p>
+
+      <p class="letter-signature">
+        May you find your way home,<br>
+        Your Captain
+      </p>
+    </article>
+  </div>
+</dialog>
+<main id="main-content" tabindex="-1">
+    <section class="hero">
+      <p class="eyebrow">Your adventure begins here</p>
+      <h1>There’s a place aboard for you</h1>
+      <p>
+        Choose your voyage and join Captain Odysseus.
+        Courage is welcome. Unnecessary boasting is discouraged.
+      </p>
+      <a class="button" href="#reservation">Choose Your Voyage</a>
+    </section>
+
+    <section class="booking-section" id="reservation">
+      <p class="eyebrow">Join the crew</p>
+      <h2>Your Voyage Request</h2>
+      <p>
+        This is a fictional booking experience for a student project.
+        Use a made-up traveler name. Nothing is sent or stored.
+      </p>
+
+      <form id="booking-form">
+        <label for="traveler">Traveler name</label>
+        <input
+          id="traveler"
+          name="traveler"
+          type="text"
+          placeholder="What should the crew call you?"
+          maxlength="60"
+          required
+        >
+
+        <label for="voyage">Choose your voyage</label>
+        <select id="voyage" name="voyage" required>
+          <option value="">Select a destination</option>
+          <option value="The Cyclops Coast">The Cyclops Coast</option>
+          <option value="The Open Sea">The Open Sea</option>
+          <option value="Homeward to Ithaca">Homeward to Ithaca</option>
+        </select>
+
+        <label for="travelers">Number of travelers</label>
+        <input
+          id="travelers"
+          name="travelers"
+          type="number"
+          min="1"
+          max="12"
+          step="1"
+          value="1"
+          required
+        >
+
+        <label class="checkbox-label">
+          <input id="crew-rules" type="checkbox" required>
+          <span>
+            I agree to follow the crew’s instructions and avoid
+            shouting my identity at an angry Cyclops.
+          </span>
+        </label>
+
+        <button class="button" type="submit">
+          Request My Voyage
+        </button>
+
+        <div id="booking-summary" class="booking-summary" hidden>
+          <h3>Voyage summary</h3>
+          <ul></ul>
+        </div>
+
+        <p id="booking-result" role="status" hidden></p>
+      </form>
+    </section>
+
+    <section class="captain">
+      <p class="eyebrow">Read before departure</p>
+      <h2>Three Rules for Returning Home</h2>
+      <p>
+        <strong>Respect your hosts:</strong>
+        An open cave is not an invitation to enter.
+      </p>
+      <p>
+        <strong>Look after the crew:</strong>
+        A clever plan succeeds when everyone works together.
+      </p>
+      <p>
+        <strong>Keep your pride in check:</strong>
+        Surviving danger matters more than claiming credit for it.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Ithaca Bound — A fictional travel company inspired by
+      Homer’s <cite>The Odyssey</cite>, Book 9.
+    </p>
+    <p>
+      Student creative project by Sandesh Basnet.
+      No real reservations or payments.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
